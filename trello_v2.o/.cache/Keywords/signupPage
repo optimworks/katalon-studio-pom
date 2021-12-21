@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "E81B30438A20BFFC738330994284D123",
+  "keywordClasses": [
+    {
+      "name": "signupPage",
+      "keywordMethods": [
+        {
+          "name": "loginWithAttlassian",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
