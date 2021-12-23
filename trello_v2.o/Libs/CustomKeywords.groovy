@@ -9,8 +9,15 @@ import com.kms.katalon.core.testobject.TestObject
 
 
 
-def static "boardHomePage.verifyBoardHomePage"() {
-    (new boardHomePage()).verifyBoardHomePage()
+def static "boardHomePage.verifyBoardHomePage"(
+    	Object boardName	) {
+    (new boardHomePage()).verifyBoardHomePage(
+        	boardName)
+}
+
+
+def static "boardHomePage.changeBoardBackGround"() {
+    (new boardHomePage()).changeBoardBackGround()
 }
 
 
@@ -38,9 +45,9 @@ def static "boardHomePage.addCardBackGround"(
 
 
 def static "boardHomePage.verifylistsIsCreatedOrNot"(
-    	Object lists	) {
+    	Object list	) {
     (new boardHomePage()).verifylistsIsCreatedOrNot(
-        	lists)
+        	list)
 }
 
 
@@ -174,6 +181,29 @@ def static "Utilities.createDynamicTestObject"(
     	String locater	) {
     (new Utilities()).createDynamicTestObject(
         	locater)
+}
+
+
+def static "Utilities.genarateRandomNumber"(
+    	int length	) {
+    (new Utilities()).genarateRandomNumber(
+        	length)
+}
+
+
+def static "Utilities.genarateRandomAlphabet"(
+    	int lenght	) {
+    (new Utilities()).genarateRandomAlphabet(
+        	lenght)
+}
+
+
+def static "Utilities.clickUsingJS"(
+    	TestObject to	
+     , 	int timeout	) {
+    (new Utilities()).clickUsingJS(
+        	to
+         , 	timeout)
 }
 
 

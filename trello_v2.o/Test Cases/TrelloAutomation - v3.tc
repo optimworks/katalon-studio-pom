@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TrelloAutomation - v3</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>59347014-ba9b-4cc4-a163-951e661bdeb8</testCaseGuid>
+   <variable>
+      <defaultValue>['list1', 'list2', 'list3']</defaultValue>
+      <description></description>
+      <id>23cf1ab2-8e21-477b-a4a2-fa4da3bd94f1</id>
+      <masked>false</masked>
+      <name>lists</name>
+   </variable>
+   <variable>
+      <defaultValue>['card1', 'card2', 'card3', 'card4', 'card5', 'card6']</defaultValue>
+      <description></description>
+      <id>17b24788-575c-43d0-824b-2351d3b8946c</id>
+      <masked>false</masked>
+      <name>cards</name>
+   </variable>
+   <variable>
+      <defaultValue>['list4', 'list5', 'list6']</defaultValue>
+      <description></description>
+      <id>08cbf218-1984-4e4d-8c42-2f654cde6310</id>
+      <masked>false</masked>
+      <name>list</name>
+   </variable>
+   <variable>
+      <defaultValue>['card7', 'card8', 'card9', 'card10', 'card11', 'card12']</defaultValue>
+      <description></description>
+      <id>b7e0f023-06c5-47cd-9eb4-5d25dc89d150</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+   <variable>
+      <defaultValue>'optimworks'</defaultValue>
+      <description></description>
+      <id>05826057-4217-4d12-98ae-3c1651b2b063</id>
+      <masked>false</masked>
+      <name>boardName</name>
+   </variable>
+</TestCaseEntity>
