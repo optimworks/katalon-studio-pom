@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "0DD585F450323CE54BC94E5E999E4DB1",
+  "keywordClasses": [
+    {
+      "name": "commanMethods.utilities",
+      "keywordMethods": [
+        {
+          "name": "closeBrowser",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

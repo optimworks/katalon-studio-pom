@@ -151,6 +151,7 @@
 			<attribute name="javadoc_location" value="file:/C:/Users/LENOVO/Downloads/Katalon_Studio_Windows_64-8.2.0/Katalon_Studio_Windows_64-8.2.0/configuration/resources/apidocs/com.kms.katalon.core.testng/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/LENOVO/Downloads/Katalon_Studio_Windows_64-8.2.0/Katalon_Studio_Windows_64-8.2.0/configuration/plugin/install/207526/1.0.0/RerunTool.jar"/>
 	<classpathentry kind="lib" path="C:/Users/LENOVO/Downloads/Katalon_Studio_Windows_64-8.2.0/Katalon_Studio_Windows_64-8.2.0/configuration/org.eclipse.osgi/26/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>

@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "F8F9729A251855D46CFB651FEBCF0D24",
+  "keywordClasses": [
+    {
+      "name": "launch",
+      "keywordMethods": [
+        {
+          "name": "launchUrl",
+          "parameters": [
+            {
+              "name": "url",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
