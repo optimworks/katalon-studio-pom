@@ -7,10 +7,23 @@ import java.lang.String
 
 import com.kms.katalon.core.testobject.TestObject
 
+import java.util.ArrayList
+
+import java.util.HashMap
+
+import java.util.List
 
 
-def static "boardHomePage.verifyBoardHomePage"() {
-    (new boardHomePage()).verifyBoardHomePage()
+
+def static "boardHomePage.verifyBoardHomePage"(
+    	Object boardName	) {
+    (new boardHomePage()).verifyBoardHomePage(
+        	boardName)
+}
+
+
+def static "boardHomePage.changeBoardBackGround"() {
+    (new boardHomePage()).changeBoardBackGround()
 }
 
 
@@ -38,9 +51,9 @@ def static "boardHomePage.addCardBackGround"(
 
 
 def static "boardHomePage.verifylistsIsCreatedOrNot"(
-    	Object lists	) {
+    	Object list	) {
     (new boardHomePage()).verifylistsIsCreatedOrNot(
-        	lists)
+        	list)
 }
 
 
@@ -177,6 +190,29 @@ def static "Utilities.createDynamicTestObject"(
 }
 
 
+def static "Utilities.genarateRandomNumber"(
+    	int length	) {
+    (new Utilities()).genarateRandomNumber(
+        	length)
+}
+
+
+def static "Utilities.genarateRandomAlphabet"(
+    	int lenght	) {
+    (new Utilities()).genarateRandomAlphabet(
+        	lenght)
+}
+
+
+def static "Utilities.clickUsingJS"(
+    	TestObject to	
+     , 	int timeout	) {
+    (new Utilities()).clickUsingJS(
+        	to
+         , 	timeout)
+}
+
+
 def static "Utilities.closeBrowser"() {
     (new Utilities()).closeBrowser()
 }
@@ -217,4 +253,97 @@ def static "HomePage.verifyBoardDelete"(
 
 def static "HomePage.logout"() {
     (new HomePage()).logout()
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createFile"(
+    	String fullPathWithoutExtension	
+     , 	String template	
+     , 	String extension	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createFile(
+        	fullPathWithoutExtension
+         , 	template
+         , 	extension)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.deleteTestSuite"(
+    	String testSuiteName	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).deleteTestSuite(
+        	testSuiteName)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.isStringBelongToList"(
+    	String text	
+     , 	java.util.ArrayList<String> list	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).isStringBelongToList(
+        	text
+         , 	list)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getListExecutedRows"(
+    	String testCaseId	
+     , 	String iterationType	
+     , 	String iterationValue	
+     , 	int dataTotalRows	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getListExecutedRows(
+        	testCaseId
+         , 	iterationType
+         , 	iterationValue
+         , 	dataTotalRows)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createNameForNewSuite"(
+    	String oldTestSuitePath	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createNameForNewSuite(
+        	oldTestSuitePath)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.replaceTSTemplateWithListNewTC"(
+    	String oldTSTemplate	
+     , 	String newTCList	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).replaceTSTemplateWithListNewTC(
+        	oldTSTemplate
+         , 	newTCList)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getProjectFileName"() {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getProjectFileName()
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.getExecutedBrowser"() {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).getExecutedBrowser()
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.replaceFailedRowsForBindingData"(
+    	java.util.HashMap<String, java.util.List<java.lang.Integer>> listFailedRowsBelongToTC	
+     , 	String testCaseTemp	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).replaceFailedRowsForBindingData(
+        	listFailedRowsBelongToTC
+         , 	testCaseTemp)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.createConsoleModeFile"(
+    	String relativeTestSuitePath	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).createConsoleModeFile(
+        	relativeTestSuitePath)
+}
+
+
+def static "com.kms.katalon.keyword.testsuite.RerunKeyword.removeTCPassedAndReplaceFailedRows"(
+    	String oldTSTemplate	
+     , 	java.util.List<String> listFailTestCases	
+     , 	java.util.HashMap<String, java.util.List<java.lang.Integer>> listFailedRowsBelongToTC	) {
+    (new com.kms.katalon.keyword.testsuite.RerunKeyword()).removeTCPassedAndReplaceFailedRows(
+        	oldTSTemplate
+         , 	listFailTestCases
+         , 	listFailedRowsBelongToTC)
 }

@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "325154AE87DE4348910938124A9BA05A",
+  "keywordClasses": [
+    {
+      "name": "userNamePage",
+      "keywordMethods": [
+        {
+          "name": "loginWithUsername",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

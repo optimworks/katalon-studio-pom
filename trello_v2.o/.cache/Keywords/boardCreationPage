@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "0D8E63AC04227633A9A9F1E9191AC684",
+  "keywordClasses": [
+    {
+      "name": "boardCreationPage",
+      "keywordMethods": [
+        {
+          "name": "boardCreate",
+          "parameters": [
+            {
+              "name": "boardName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

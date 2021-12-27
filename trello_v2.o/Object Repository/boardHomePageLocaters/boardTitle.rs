@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>boardTitle</name>
+   <tag></tag>
+   <elementGuidId>8de9e814-7349-41df-97f2-ea6568566e67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h1[text()='${text}']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>//h1[text()='optomworks']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "9D09C8205C6BEDB859F1E343F648EFFD",
+  "keywordClasses": [
+    {
+      "name": "commonMethods.Utilities",
+      "keywordMethods": [
+        {
+          "name": "closeBrowser",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
