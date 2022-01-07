@@ -28,7 +28,6 @@ public class HomePage {
 	int longTime = GlobalVariable.longTime
 
 	int veryLongTime = GlobalVariable.veryLongTime
-	
 @Keyword
 	def verifyHomePageIsVisible() {
 
@@ -38,6 +37,15 @@ public class HomePage {
 	@Keyword
 	def createBoard(String boardName) {
 
+		CustomKeywords.'Utilities.click'(findTestObject('homePageLocaters/createNewBoard'), shortTime)
+
+		CustomKeywords.'Utilities.enterText'(findTestObject('boardCreationLocaters/boardTitleTextField'), boardName, shortTime)
+
+		CustomKeywords.'Utilities.click'(findTestObject('boardCreationLocaters/createBoardButton'), shortTime)
+	}
+
+	@Keyword
+	def verifyBoardIsCreatedOrNot(String boardName) {
 		
 		int randomNumber = CustomKeywords.'Utilities.genarateRandomNumber'(100)
 		

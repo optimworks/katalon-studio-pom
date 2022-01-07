@@ -6,6 +6,8 @@
    <elementGuidId>8de9e814-7349-41df-97f2-ea6568566e67</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//h1[text()='optimworks']</value>
          <key>BASIC</key>
       </entry>
       <entry>
@@ -15,6 +17,9 @@
       <entry>
          <key>CSS</key>
          <value>//h1[text()='optomworks']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

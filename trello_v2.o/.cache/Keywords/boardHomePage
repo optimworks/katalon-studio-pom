@@ -102,7 +102,7 @@
           "name": "verifylistsIsCreatedOrNot",
           "parameters": [
             {
-              "name": "list",
+              "name": "lists",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.Object",
