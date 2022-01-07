@@ -28,8 +28,7 @@ public class HomePage {
 	int longTime = GlobalVariable.longTime
 
 	int veryLongTime = GlobalVariable.veryLongTime
-
-	@Keyword
+@Keyword
 	def verifyHomePageIsVisible() {
 
 		assert WebUI.verifyElementPresent(findTestObject('Object Repository/homePageLocaters/userLogo'), veryLongTime)==true:'home page not visible'
@@ -47,6 +46,24 @@ public class HomePage {
 
 	@Keyword
 	def verifyBoardIsCreatedOrNot(String boardName) {
+		
+		int randomNumber = CustomKeywords.'Utilities.genarateRandomNumber'(100)
+		
+		println(boardName+randomNumber)
+		
+		CustomKeywords.'Utilities.click'(findTestObject('homePageLocaters/createNewBoard'), shortTime)
+
+		CustomKeywords.'Utilities.enterText'(findTestObject('boardCreationLocaters/boardTitleTextField'), boardName+randomNumber, shortTime)
+
+		CustomKeywords.'Utilities.click'(findTestObject('boardCreationLocaters/createBoardButton'), shortTime)
+		
+		return boardName+randomNumber
+		}
+
+	@Keyword
+	def verifyBoardIsCreatedOrNot(String boardName) {
+		
+		println(boardName)
 
 		assert WebUI.waitForElementVisible(findTestObject('Object Repository/homePageLocaters/boardTitle',[('text'):boardName]), veryLongTime)==true:"board not created"
 	}
@@ -60,12 +77,6 @@ public class HomePage {
 
 	@Keyword
 	def verifyBoardDelete(String boardName) {
-
-		//	String board = "//h3[normalize-space()='YOUR WORKSPACES']/parent::div//*[@title='"+boardName+"']"
-
-		//TestObject tobj = new TestObject()
-
-		//tobj.addProperty('xpath', ConditionType.EQUALS, board)
 
 		assert WebUI.verifyElementNotPresent(findTestObject('Object Repository/homePageLocaters/boardInWorkspaceButton',['title':boardName]), longTime) == true : 'board is visible'
 	}

@@ -1,11 +1,30 @@
 {
-  "keywordFileContentHash": "28D81023FED94BC70BC0AF5042DAA6E9",
+  "keywordFileContentHash": "FFF6FAAC03A6DDCAC9CE5645CC6E7DC5",
   "keywordClasses": [
     {
       "name": "boardHomePage",
       "keywordMethods": [
         {
           "name": "verifyBoardHomePage",
+          "parameters": [
+            {
+              "name": "boardName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "changeBoardBackGround",
           "parameters": [],
           "javadoc": ""
         },

@@ -60,6 +60,41 @@ CustomKeywords.'boardHomePage.addCardBackGround'(cards)
 //CustomKeywords.'boardHomePage.verifyRevertDrogAndDrop'(lists,cards)
 //
 //CustomKeywords.'boardHomePage.deleteBoard'(boardName)
+CustomKeywords.'boardHomePage.changeBoardBackGround'()
+
+//CustomKeywords.'boardHomePage.createList'(lists)
+
+//CustomKeywords.'boardHomePage.verifylistsIsCreatedOrNot'(lists)
+
+//CustomKeywords.'boardHomePage.createCards'(lists, cards)
+
+//CustomKeywords.'boardHomePage.addCardBackGround'(cards)
+
+//CustomKeywords.'boardHomePage.verifyCardsIsCreatedOrNot'(cards)
+
+//CustomKeywords.'boardHomePage.changeCardsCover'(cards)
+
+//CustomKeywords.'boardHomePage.moveToHomePage'()
+
+//CustomKeywords.'HomePage.verifyHomePageIsVisible'()
+
+//CustomKeywords.'HomePage.verifyBoardIsVisibleOrNotInRecentlyViewedSection'(boardName)
+
+//CustomKeywords.'boardHomePage.verifyBoardIsVisibleOrNotInWorkspace'(boardName)
+
+//CustomKeywords.'boardHomePage.verifyBoardHomePage'()
+
+//CustomKeywords.'boardHomePage.PrintCardAndListNames'(lists, cards)
+
+//CustomKeywords.'boardHomePage.dragAndDrop'(lists,cards)
+
+//CustomKeywords.'boardHomePage.verifyDrogAndDrop'(lists,cards)
+
+//CustomKeywords.'boardHomePage.revertDrogAndDrop'(lists,cards)
+
+//CustomKeywords.'boardHomePage.verifyRevertDrogAndDrop'(lists,cards)
+
+CustomKeywords.'boardHomePage.deleteBoard'(boardName)
 
 //CustomKeywords.'HomePage.verifyBoardDelete'(boardName)
 

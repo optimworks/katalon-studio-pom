@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>boardTitle</name>
+   <name>uploadBackgroundImageButton</name>
    <tag></tag>
-   <elementGuidId>8de9e814-7349-41df-97f2-ea6568566e67</elementGuidId>
+   <elementGuidId>84a8d809-53d5-4546-be4c-922a0fb368d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//h1[text()='optimworks']</value>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h1[text()='${text}']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>//h1[text()='optomworks']</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
+         <value>//span[@class='background-box']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

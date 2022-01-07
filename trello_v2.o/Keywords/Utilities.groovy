@@ -17,7 +17,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-import internal.GlobalVariable
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.JavascriptExecutor;
+//import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+//import org.apache.commons.lang.RandomStringUtils as RandStr
+import org.apache.commons.lang.RandomStringUtils
+import java.util.Random as Random
+
 
 public class Utilities {
 
@@ -57,6 +67,30 @@ public class Utilities {
 		dynamicObject.addProperty('xpath', ConditionType.EQUALS, locater)
 
 		return dynamicObject;
+	}
+
+	@Keyword
+	def genarateRandomNumber(int length) {
+
+		Random rand = new Random()
+		int randomNumber = (rand.nextInt(length))
+		return randomNumber
+
+
+	}
+
+	@Keyword
+	def genarateRandomAlphabet(int lenght) {
+		String alphabet = RandomStringUtils.randomAlphabetic(lenght).toLowerCase()
+		return alphabet
+	}
+
+	@Keyword
+	def clickUsingJS(TestObject to, int timeout) {
+
+		WebElement element = WebUiCommonHelper.findWebElement(to,timeout)
+
+		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element))
 	}
 
 	@Keyword
